@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+  }
+  
+  #Fpage{
+      background: 
+      /* top, transparent red, faked with gradient */ linear-gradient(
+        rgba(221, 201, 201, 0.45),
+        rgba(0, 0, 0, 0.45)
+      ),
+      /* bottom, image */ url(/imgs/imagereader-1-1024x682.jpg.crdownload);
+      background-size: cover;
+      background-attachment:fixed ;
+  
+  
+  }
+  
+  .HouseIMG{
+   
+  }
+  
+  .liftTingz{
+    padding-bottom: 150px;
+  }
+  
+  .logo{
+    opacity: 70%;
+    border-radius: 18px;
+  }
+  
+  .home-con{
+  align-items: baseline;
+  flex-direction: column;
+  margin-left: 10px;
+  max-width: 200px;
+  border-radius: 15px;
+  }
+  
+  
+  #Header1{
+      padding-top: 290px ;
+      font-family: "Satisfy", serif;
+  }
+  
+
+    /* ==================================== Navbar ========================================================================= */
+
+
+    #navbar {
+        overflow: hidden;
+        background-color: #333;
+      }
+      
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      #navbar a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      .content {
+        padding: 16px;
+      }
+      
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      .sticky + .content {
+        padding-top: 60px;
+      }
+      
+      
+          /*===================================================== For the pictuers===============================================*/
+      
+          .pics {
+            width: 35%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .projects-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .projects-container img{
+            flex-grow: 1;
+            /* max-width: 300px; */
+            max-height:400px ;
+            object-fit: cover;
+        
+        }
+
+        /* ===================================== Search bar =========================================== */
+
+/* Create a column layout with Flexbox */
+.row {
+    display: flex;
+    
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 35%;
+    padding: 15px 0;
+    margin-top: 40px;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    font-size: larger;
+  }
+  
+  #myMenu li a:hover {
+    background-color: #eee;
+  }
+  
+
+/*===========================================================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --color-primary: #9d0191;
+    --color-sec: #db6400;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* UTILITY */
+.p-small {
+    padding-bottom: 5px;
+}
+.p-medium {
+    padding-bottom: 10px;
+}
+.p-y {
+    padding: 10px 0;
+}
+.m-y {
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    /* width: 100%; */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #eee;
+    padding: 1rem;
+}
+header h1 {
+    font-size: 2.5rem;
+    line-height: 2;
+    color: var(--color-primary);
+}
+
+form input {
+    width: 20rem;
+    padding: .7rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    border-bottom: 2px solid var(--color-sec);
+    margin-bottom: 1rem;
+}
+
+ .btn {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 1rem;
+    background-color: var(--color-sec);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.active {
+    background-color: var(--color-primary);
+}
+
+#store-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.store-product {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    max-width: 250px;
+}
+
+.product-details {
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #eee;
+}
+
+.product-details h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.product-details p {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+.product-details p span {
+    text-decoration: line-through;
+    color: red;
+    font-weight: normal;
+}
+
+.product-details a {
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: var(--color-sec);
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+}
+
+.product-details a:hover {
+    background-color: var(--color-primary);
+}
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Tr
