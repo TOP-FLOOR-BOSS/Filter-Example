@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <link rel="stylesheet" href="/Admin/admin styles.css">
+    <title>Admin</title>
+</head>
+<body>
+
+    <div class="container">
+        <section class="filterBar">
+           <div class="search-ui">
+         <label for="search">Search</label>
+         <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search by user name or email address..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+           </div>
+           <div class="filter-ui">
+        <label for="filters">Show me</label>
+        <div class="styled-select">
+           <select name="accountStatus" id="filters">
+              <option value="active">Everyone</option>
+              <optgroup label="Audience">
+                 <option value="commenters">Commenters</option>
+              </optgroup>
+              <optgroup label="Organization">
+                 <option value="admins">Admins</option>
+                 <option value="moderators">Moderators</option>
+                 <option value="banned">Staff</option>
+              </optgroup>
+           </select>
+        </div>
+           </div>
+        </section>
+        
+        <table>
+           <tr class="table-header">
+              <th>Id</th>
+              <th>Suite</th>
+              <th>Member Since</th>
+              <th class="roleHead">Role</th>
+              <th class="statusHead">Status</th>
+           </tr>
+           <tr>
+              <td class="username">ButFirstCoffee</td>
+              <td class="email"><a href="mailto:email@email.com">coffee@mail.com</a></td>
+              <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">SneaksOnSneaks</td>
+              <td class="email"><a href="mailto:email@email.com">hisairness@mail.com</a></td>
+              <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">LongestDisplayName</td>
+              <td class="email"><a href="mailto:email@email.com">longlonglong@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="bannedUser">Banned<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username"> ChicagoSportsFan343</td>
+              <td class="email"><a href="mailto:email@email.com">gocubsgobearsok@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="admin">Admin<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">RowdyChef</td>
+              <td class="email"><a href="mailto:email@email.com">kitchenchaos@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">RDK37294</td>
+              <td class="email"><a href="mailto:email@email.com">rdk1979@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="suspendedUser">Suspended<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">SanLewis38273</td>
+              <td class="email"><a href="mailto:email@email.com">firstmiddlelast@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="bannedUser">Banned<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">RoundNRound</td>
+              <td class="email"><a href="mailto:email@email.com">sjohnson@newsorganization.com</a></td>      <td>01/27/2019</td>
+              <td class="moderator">Moderator<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+            <tr>
+              <td class="username">SeeTheWorld3837</td>
+              <td class="email"><a href="mailto:email@email.com">sevencontinents@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="bannedUser">Banned<i class="fas fa-angle-down"></i></td>
+           </tr>
+            <tr>
+              <td class="username">NiteCap472</td>
+              <td class="email"><a href="mailto:email@email.com">ontheveranda@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+            <tr>
+              <td class="username">Oregon3724</td>
+              <td class="email"><a href="mailto:email@email.com">jdoe@newsorganization.com</a></td>      <td>01/27/2019</td>
+              <td class="staff">Staff<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">LateNiteGamer</td>
+              <td class="email"><a href="mailto:email@email.com">fortniteallnite@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="suspendedUser">Suspended<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">ManyFeelings</td>
+              <td class="email"><a href="mailto:email@email.com">happysadmad@mail.com</a></td>      <td>01/27/2019</td>
+              <td class="commenter">Commenter<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+           <tr>
+              <td class="username">PigsFly323</td>
+              <td class="email"><a href="mailto:email@email.com">sample@email.com</a></td>      <td>01/27/2019</td>
+              <td class="admin">Admin<i class="fas fa-angle-down"></i></td>
+              <td class="activeUser">Active<i class="fas fa-angle-down"></i></td>
+           </tr>
+        </table>
+        </div>
+        
+    
+</body>
+</html>
