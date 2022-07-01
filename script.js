@@ -109,7 +109,7 @@ let properties = JSON.parse(localStorage.getItem("property"))
         },
       ])
     );
-
+localStorage.setItem('property', JSON.stringify(properties));
 function getProperties() {
   document.getElementById("Proprtiezzzz").innerHTML = "";
   properties.forEach((property) => {
