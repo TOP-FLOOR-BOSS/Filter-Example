@@ -3,12 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Property listing</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
     <link rel="stylesheet" href="/stlyes.css">
 </head>
 <body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">Main</a>
+        <a href="http://127.0.0.1:5503/index.html">Admin</a>
+      </div>
+      
 
     <section id="Fpage" class="vh-100 vw-100">
 
@@ -60,128 +69,120 @@
     
 
     <section>
+        <!-- Filter Btns -->
         <header>
             <div class="container">
-                <h1>Product Filter</h1>
+                <h1>Property Filter</h1>
                 <!-- Search box -->
                 <div class="search-box">
                     <form action="" onsubmit="return false">
-                        <input type="text" id="search" placeholder="Search Product">
+                        <input type="text" id="search" placeholder="Search Country">
                         <!-- <button id="btn-search">Search</button> -->
                     </form>
                 </div>
                 <div class="filter-box">
                     <a href="#" class="btn active" data-filter="all">All</a>
-                    <a href="#" class="btn" data-filter="watch">Watch</a>
-                    <a href="#" class="btn" data-filter="shirt">Shirt</a>
-                    <a href="#" class="btn" data-filter="gown">Gown</a>
-                    <a href="#" class="btn" data-filter="jewelry">Jewelry</a>
+                    <a href="#" class="btn" data-filter="watch">House</a>
+                    <a href="#" class="btn" data-filter="shirt">Apartments</a>
+                    <a href="#" class="btn" data-filter="gown">$3M - $6M</a>
+                    <a href="#" class="btn" data-filter="jewelry">5k - 10k (pm)</a>
                 </div>
             </div>
         </header>
         
         <main>
-            <div class="slide-container">
-            <section class="container" id="store-products">
+            <!-- House = watch // Apartment = shirt // $3M - $6M = Gown  // 5k - 10k (pm) = Jewelry -->
+            <section id="store-products">
+
+               <div class="slide-container">
             
-            <div class="store-product watch">
-                <img src="./images/1.png" alt="">
-                <div class="product-details">
-                    <h2>Watch Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
+                        <div class="store-product shirt jewelry">
+                            <img src="/Images/Apartm`ent in Portugal.jpeg" id="Portugal" alt="">
+                            <div class="product-details">
+                                <h2>Brand New 3 Bedroom Apartment For Sale in Porto, <i class="fa-solid fa-location-dot"></i> Portugal</h2>
+                                <p> $4,000,00</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product watch gown">
+                            <img src="/Images/28IHH-GERMANY-slide-IN6W-articleLarge.webp" id="germany" alt="">
+                            <div class="product-details">
+                                <h2> 5 Bedroom cozy home in berlin, <i class="fa-solid fa-location-dot"></i> Germany</h2>
+                                <p> $4,000,00</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product watch gown">
+                            <img src="/Images/Brazil House.webp" id="Brazil" alt="">
+                            <div class="product-details">
+                                <h2>Luxury villa in Rio, for the ballers, <i class="fa-solid fa-location-dot"></i> Brazil</h2>
+                                <p> $6,000,00</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product watch gown">
+                            <img src="./Images/Spain House.webp" id="Spain" alt="">
+                            <div class="product-details">
+                                <h2>Mansion with 8 bedrooms, <i class="fa-solid fa-location-dot"></i> Spain</h2>
+                                <p> $3,631,00</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product watch gown">
+                            <img src="/Images/France2 House.jpg" id="france" alt="">
+                            <div class="product-details">
+                                <h2>House on the lake, <i class="fa-solid fa-location-dot"></i> France</h2>
+                                <p> $4,006,00</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product watch gown">
+                            <img src="./Images/Australia House.webp" id="Australia" alt="">
+                            <div class="product-details">
+                                <h2>Shirt Product</h2>
+                                <p> $5,050,05</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product watch gown">
+                            <img src="./Images/Greece house.webp" id="Greece" alt="">
+                            <div class="product-details">
+                                <h2>Beutiful home Athens, <i class="fa-solid fa-location-dot"></i> Greece</h2>
+                                <p> $4,000,00</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product shirt jewelry">
+                            <img src="/Images/Italy Aprtment.jpg" id="Italy" alt="">
+                            <div class="product-details">
+                                <h2>Top floor apartment in hghgh , <i class="fa-solid fa-location-dot"></i> Italy</h2>
+                                <p>  $5000,0</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product shirt jewelry">
+                            <img src="/Images/Superior-apartments-Waterfront.webp" id="Waterfront" alt="">
+                            <div class="product-details">
+                                <h2>Top floor apartment in Cape Town near all the fun, <i class="fa-solid fa-location-dot"></i> Strandfontein </h2>
+                                <p>  $8900,0</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+                        <div class="store-product shirt jewelry">
+                            <img src="/Images/Apartment Pariee.jpg"  id="Paris" alt="">
+                            <div class="product-details">
+                                <h2>2 Bedroom Apartment, with a street parking, Paris, <i class="fa-solid fa-location-dot"></i> France </h2>
+                                <p> $4000,0</p>
+                                <a href="#">Add to Cart</a>
+                            </div>
+                        </div>
+    
                 </div>
-            </div>
-            <div class="store-product watch">
-                <img src="./images/2.png" alt="">
-                <div class="product-details">
-                    <h2>Watch Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product watch">
-                <img src="./images/13.png" alt="">
-                <div class="product-details">
-                    <h2>Watch Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product shirt">
-                <img src="./images/3.png" alt="">
-                <div class="product-details">
-                    <h2>Shirt Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product shirt">
-                <img src="./images/4.png" alt="">
-                <div class="product-details">
-                    <h2>Shirt Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product shirt">
-                <img src="./images/5.png" alt="">
-                <div class="product-details">
-                    <h2>Shirt Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product gown">
-                <img src="./images/6.png" alt="">
-                <div class="product-details">
-                    <h2>Gown Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product shirt">
-                <img src="./images/7.png" alt="">
-                <div class="product-details">
-                    <h2>Shirt Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product shirt">
-                <img src="./images/8.png" alt="">
-                <div class="product-details">
-                    <h2>Shirt Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product jewelry">
-                <img src="./images/9.png" alt="">
-                <div class="product-details">
-                    <h2>Jewelry Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product jewelry">
-                <img src="./images/10.png" alt="">
-                <div class="product-details">
-                    <h2>Jewelry Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-            <div class="store-product jewelry">
-                <img src="./images/11.png" alt="">
-                <div class="product-details">
-                    <h2>Jewelry Product</h2>
-                    <p> <span>$39.99</span> $29.99</p>
-                    <a href="#">Add to Cart</a>
-                </div>
-            </div>
-        </section>
-    </div>
+    
+
+        
+
+            </section>
     </main>
     </section>
 

@@ -6,13 +6,43 @@
     /* overflow-x: hidden; */
   }
   
+/*====================================== Nav Bar =================================================*/
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/*====================================== Nav Bar =================================================*/
+
+
   #Fpage{
       background: 
       /* top, transparent red, faked with gradient */ linear-gradient(
         rgba(221, 201, 201, 0.45),
         rgba(0, 0, 0, 0.45)
       ),
-      /* bottom, image */ url(/imgs/imagereader-1-1024x682.jpg.crdownload);
+      /* bottom, image */ url(/Images/beautiful-family-beach-house-with-stunning-views-2-thumb-970xauto-36621.jpg);
       background-size: cover;
       background-attachment:fixed ;
   
@@ -99,14 +129,17 @@
             border-radius: 50%;
         }
         
-        .projects-container{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 30px;
+        .slide-container{
+          width: 100vw;
+          height: 60vh;
+          background-color: gray;
+          display: grid;
+          grid-template-columns: repeat(2, 2fr);
+          grid-template-rows: repeat(3, auto-fill);
+          gap: 10px;
         }
         
-        .projects-container img{
+        .slide-container img{
             flex-grow: 1;
             /* max-width: 300px; */
             max-height:400px ;
@@ -175,11 +208,7 @@
     --color-dark-grey: #222831;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -208,11 +237,7 @@ img {
     /* width: 100%; */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+
 
 header {
     background-color: #eee;
@@ -249,19 +274,19 @@ form input {
     background-color: var(--color-primary);
 }
 
-#store-products {
+/* #store-products {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     column-gap: 2rem;
     row-gap: 2rem;
     padding: 2rem 0;
-}
+} */
 
-.store-product {
+/* .store-product {
     border: 1px solid #eee;
     border-radius: 3px;
     max-width: 250px;
-}
+} */
 
 .product-details {
     text-align: center;
@@ -296,17 +321,3 @@ form input {
     border-radius: 3px;
 }
 
-.product-details a:hover {
-    background-color: var(--color-primary);
-}
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Tr
